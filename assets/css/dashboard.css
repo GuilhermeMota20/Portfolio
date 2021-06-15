@@ -1,0 +1,404 @@
+/* === Classes === */
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--second-color);
+    text-align: center;
+    font-weight: var(--font-bold);
+    margin-bottom: .25rem;
+}
+
+
+/* === Layout === */
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0, .3);
+}
+
+/* === Home | Pagina Inicial */
+.home__container {
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+}
+
+.home__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.home__img {
+    padding-top: 1.3rem;
+    padding-left: .8rem;
+    width: 155px;
+    height: 155px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--mb-2);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+
+}
+
+.home__img img {
+    width: 155px;
+    height: 134px;
+    margin-left: -9px;
+}
+
+.home__title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.home__profession {
+    font-size: var(--small-font-size);
+    color: var(--second-color);
+    margin-bottom: var(--mb-5);
+}
+
+.home__social {
+    margin-bottom: 5rem;
+
+}
+
+.home__social-link {
+    display: inline-flex;
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+    font-size: 1.4rem;
+    border-radius: 50%;
+    padding: .40rem;
+    margin: 0 var(--mb-1);
+    transition: .3s;
+}
+
+.home__social-link:hover {
+    background-color: #cf2e41;
+    color: var(--first-color-light);
+}
+
+.home__button {
+    width: 100%;
+}
+
+/* === About === */
+.about__container {
+    row-gap: 2rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__description {
+    margin-bottom: var(--mb-4);
+}
+
+.about__img {
+    width: 150px;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+
+.about__information {
+    margin-bottom: var(--mb-4);
+}
+
+.abput__information-title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+
+.about__information-data {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.about__information-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-4);
+}
+
+.about__information-subtitle {
+    display: block;
+    font-weight: var(--font-semi-bold);
+}
+
+.about__information-subtitle-small {
+    font-size: var(--small-font-size);
+}
+
+
+/* === Skills | habilidades === */
+.skills__container {
+    row-gap: 2rem;
+
+}
+
+.skills__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--second-color);
+    margin-bottom: var(--mb-2);
+}
+
+.skills__data {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.skills__name {
+    text-transform: uppercase;
+}
+
+.skills__bar {
+    position: absolute;
+    bottom: -.75rem;
+    height: .25rem;
+    background: var(--first-color);
+}
+
+
+/* === Front end */
+.skills__html {
+    width: 100%;
+}
+
+.skills__css {
+    width: 100%;
+}
+
+.skills__bootstrap {
+    width: 40%;
+}
+
+.skills__js {
+    width: 40%;
+}
+
+/* === Back end === */
+.skills__sql {
+    width: 40%;
+}
+
+.skills__node {
+    width: 40%;
+}
+
+
+/* === Education | escolaridade === */
+.education__container {
+    row-gap: 2rem;
+}
+
+.education__content {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.education__year, .education__race {
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.education__university, .education__specialty {
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.education__year, .education__university {
+    text-align: right;
+}
+
+.education__time {
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+.education__rounder {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+}
+
+.education__rounder::before {
+    content: '';
+    position: absolute;
+    transform: translate(-4px, -4px);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+}
+
+.education__line {
+    display: block;
+    height: 90%;
+    width: 2px;
+    background-color: var(--first-color);
+    transform: translate(5px, -4px);
+}
+
+
+/* === Services | serviços === */
+.service__container {
+    row-gap: 2rem;
+
+}
+
+.services__content {
+    padding: 1.5rem .5rem;
+    background-color: var(--second-bg);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.services__icon {
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+    border-radius: 50%;
+    margin-bottom: var(--mb-2);
+}
+
+.services__title {
+    font-size: 1.25rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services__content {
+    transition: 500ms;
+}
+
+.services__content:hover {
+    box-shadow: 5px 5px 4px rgba(0,0,0, .3);
+}
+
+/* === works | projetos  */
+.works__container {
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.works__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: .6rem;
+}
+
+.works__data {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ee374c9c;
+    border-radius: .5rem;
+    transition: 300ms;
+}
+
+.works__link {
+    display: inline-flex;
+    font-size: 1.5rem;
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+    padding: .25rem;
+    border-radius: .25rem;
+    margin-bottom: var(--mb-2);
+}
+
+.works__title {
+    font-size: var(--h2-font-size);
+    color: var(--first-color-light);
+}
+
+.works__img:hover .works__data {
+    bottom: 0;
+}
+
+
+
+/* === contact | contato */
+.contact__container {
+    row-gap: 3rem;
+
+}
+
+.contact__input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--second-bg);
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+    border-radius: .5rem;
+}
+
+.contact ::placeholder {
+    color: var(--second-color);
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+
+.contact__info {
+    margin-bottom: var(--mb-3);
+}
+
+.contact__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--second-color);
+    margin-bottom: var(--mb-1);
+}
+
+.contact__text {
+    display: block;
+    padding-left: 1rem;
+}
+

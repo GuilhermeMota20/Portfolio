@@ -1,0 +1,77 @@
+/*  === Nav === */
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex ;
+    align-items: center;
+    background: var(--second-bg);
+    transition: 500ms;
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: 300ms;
+    cursor: pointer;
+    width: 13rem;
+}
+
+.nav__link:hover {
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+}
+
+.nav__toggle {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.nav__icon {
+    font-size: 1.25rem;
+}
+
+.nav__nome {
+    font-size: var(--samll-fontsize);
+}
+
+/* === Show Menu === */
+.show {
+    left: 0;
+}
+
+/* === Active Menu === */
+.active {
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+}
