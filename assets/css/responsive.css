@@ -34,6 +34,11 @@
     .education__time {
         padding: 0 2rem;
     }
+
+    .contact__inputs {
+        display: flex;
+        gap: 1rem;
+    }    
 }
 
 

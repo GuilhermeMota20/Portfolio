@@ -38,7 +38,6 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--bg-color);
-    box-shadow: 0 2px 4px rgba(0,0,0, .3);
 }
 
 /* === Home | Pagina Inicial */
@@ -379,6 +378,8 @@
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
+
+    color: var(--second-color);
 }
 
 .contact ::placeholder {
