@@ -1,25 +1,3 @@
-/* === Classes === */
-.section {
-    padding: 4rem 0 2rem;
-}
-
-.section-title {
-    font-size: var(--h1-font-size);
-    color: var(--first-color);
-    margin-bottom: var(--mb-3);
-    text-align: center;
-}
-
-.section-subtitle {
-    display: block;
-    font-size: var(--small-font-size);
-    color: var(--second-color);
-    text-align: center;
-    font-weight: var(--font-bold);
-    margin-bottom: .25rem;
-}
-
-
 /* === Layout === */
 .bd-grid {
     max-width: 1024px;
