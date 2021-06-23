@@ -187,19 +187,14 @@
     width: 40%;
 }
 
-.skills__js {
-    width: 40%;
-}
-
 /* === Back end === */
 .skills__sql {
     width: 40%;
 }
 
-.skills__node {
+.skills__js {
     width: 40%;
 }
-
 
 /* === Education | escolaridade === */
 .education__container {
