@@ -143,58 +143,41 @@
 
 
 /* === Skills | habilidades === */
-.skills__container {
-    row-gap: 2rem;
+.skills__content {
+    display: grid;
+    grid-template-columns: repeat(2, .2fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
 
+    margin-top: 2.5rem;
 }
 
-.skills__subtitle {
-    font-size: var(--h3-font-size);
-    color: var(--second-color);
-    margin-bottom: var(--mb-2);
-}
-
-.skills__data {
-    position: relative;
+.card {
     display: flex;
-    justify-content: space-between;
-    margin: 0 var(--mb-2);
-    margin-bottom: var(--mb-4);
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--second-bg);
+    border-radius: .3rem;
+    padding: 1rem 2rem;
+
+    width: 8rem;
+
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.048);
 }
 
-.skills__name {
+.card__icon-skills {
+    font-size: 3rem;
+    color: var(--first-color);
+}
+
+.card__title-skills {
+    color: var(--first-color);
     text-transform: uppercase;
+    font-size: 1rem;
 }
 
-.skills__bar {
-    position: absolute;
-    bottom: -.75rem;
-    height: .25rem;
-    background: var(--first-color);
-}
-
-
-/* === Front end */
-.skills__html {
-    width: 100%;
-}
-
-.skills__css {
-    width: 100%;
-}
-
-.skills__bootstrap {
-    width: 40%;
-}
-
-/* === Back end === */
-.skills__sql {
-    width: 40%;
-}
-
-.skills__js {
-    width: 40%;
-}
 
 /* === Education | escolaridade === */
 .education__container {
@@ -264,6 +247,8 @@
     background-color: var(--second-bg);
     border-radius: .5rem;
     text-align: center;
+
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.048);
 }
 
 .services__icon {
@@ -281,14 +266,6 @@
     margin-bottom: var(--mb-1);
 }
 
-.services__content {
-    transition: 500ms;
-}
-
-.services__content:hover {
-    box-shadow: 5px 5px 4px rgba(0,0,0, .3);
-}
-
 /* === works | projetos  */
 .works__container {
     justify-items: center;
@@ -302,17 +279,23 @@
 }
 
 .works__data {
-    position: absolute;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background: #ee374c9c;
-    border-radius: .5rem;
-    transition: 300ms;
+
+    background-color: var(--second-bg);
+    padding: 1rem 0;
+    border-radius: 0 0 .3rem .3rem;
+}
+
+.works__icon {
+    font-size: 1.5rem;
+
+    background-color: var(--first-color);
+    color: var(--second-bg);
+
+    padding: .3rem;
+    border-radius: .3rem;
 }
 
 .works__link {
@@ -375,4 +358,20 @@
     display: block;
     padding-left: 1rem;
 }
+
+/* SwiperJS ============================== */
+.swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: .75rem;
+    height: .75rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--first-color);
+}
+
 

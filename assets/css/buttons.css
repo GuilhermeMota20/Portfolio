@@ -49,7 +49,7 @@
     color: var(--first-color-light);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
-    z-index: var(--z-modal);
+    z-index: var(--z-fixed);
     transition: 300ms;
 
     visibility: hidden;

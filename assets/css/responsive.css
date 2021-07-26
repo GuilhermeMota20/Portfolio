@@ -8,9 +8,7 @@
         width: var(--nav-width);
     }
 
-
     .about__container,
-    .skills__container,
     .service__container,
     .works__container,
     .contact__container,
@@ -28,6 +26,12 @@
     }
     .about__information {
         padding-left: 4rem;
+    }
+
+
+    .skills__content {
+        grid-template-columns: repeat(3, .2fr);
+
     }
 
 
