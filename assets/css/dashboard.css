@@ -374,6 +374,7 @@
 .swiper-pagination-bullet {
     width: .75rem;
     height: .75rem;
+    background-color: var(--text-color);
 }
 
 .swiper-pagination-bullet-active {
