@@ -1,5 +1,5 @@
 // TESTIMONIALS CAROUSEL SLIDER SWIPERJS
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     slidesPerView: 1.5,
     pagination: {
         el: '.swiper-pagination'
