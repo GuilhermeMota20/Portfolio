@@ -88,6 +88,7 @@
 
 .home__button {
     width: 100%;
+    cursor: not-allowed;
 }
 
 /* === About === */
@@ -164,7 +165,7 @@
 
     width: 8rem;
 
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.048);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .01);
 }
 
 .card__icon-skills {
@@ -248,7 +249,7 @@
     border-radius: .5rem;
     text-align: center;
 
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.048);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .01);
 }
 
 .services__icon {
